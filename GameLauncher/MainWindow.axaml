@@ -4,11 +4,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Width="600" Height="450"
         x:Class="GameLauncher.MainWindow"
-        Title="GameLauncher"
+        Title="RobinMania Launcher"
+        Activated="MainWindow_Activated"
+        Icon="Assets/logo.ico"
         >
   <Window.Styles>
     <Style Selector="Window">
-      <Setter Property="Background" Value="#110E0E"/>
+      
+      <Setter Property="Background" Value="#272935"/>
     </Style>
     
   </Window.Styles>
@@ -17,7 +20,7 @@
     <Image  Source="Assets/logofinal_transparent.png"/>
 
     <TextBlock Name="VersionText" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="20" Foreground="White" Margin="0, 0, 5, 0"/>
-    <Button Classes="btn" Name="PlayButton" Content="Checking For Updates" Click="PlayButton_Click" Height="60" FontSize="28" FontWeight="Bold" Foreground="#DDFFFFFF" Margin="0, 0, 0, 15" VerticalAlignment="Bottom" HorizontalAlignment="Center" MinWidth="150" Background="#272935" Padding="10"/>
+    <Button Classes="btn" Name="PlayButton" Content="Checking For Updates" Click="PlayButton_Click" Height="60" FontSize="28" FontWeight="Bold" Foreground="#DDFFFFFF" Margin="0, 0, 0, 15" VerticalAlignment="Bottom" HorizontalAlignment="Center" HorizontalContentAlignment="Center" MinWidth="150" Background="#110E0E" Padding="10"/>
   </Grid>
 
 </Window>
